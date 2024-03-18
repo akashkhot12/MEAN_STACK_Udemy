@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations/index";
+ import { FormsModule } from "@angular/forms";
+
+import { MatInputModule } from "@angular/material/input";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +16,11 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatInputModule
+
   ],
   providers: [
     provideAnimationsAsync()
