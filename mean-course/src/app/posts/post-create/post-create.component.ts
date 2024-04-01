@@ -1,8 +1,7 @@
 import { Component, Output,EventEmitter} from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { Post } from "";
-
+import { Post } from "../post.model"
 
 @Component({
   selector: 'app-post-create',
